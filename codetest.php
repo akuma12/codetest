@@ -10,7 +10,6 @@ function age_of($name) {
 	try {
 	  $conn = new PDO('mysql:host=localhost;dbname=company', "bob", "likeskittens");
 	  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		return $conn;
 	} catch(PDOException $e) {
 	  return $e;
 	}
