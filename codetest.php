@@ -8,7 +8,7 @@ function sanitize_name($name) {
 
 function age_of($name) {
 	try {
-	  $conn = new PDO('mysql:host=localhost;dbname=company', "bob", "likeskittens");
+	  $conn = new PDO('mysql:host=localhost;dbname=company', "bob", "likes_kittens");
 	  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	} catch(PDOException $e) {
 	  return $e;
