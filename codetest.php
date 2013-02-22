@@ -2,7 +2,7 @@
 function sanitize_name($name) {
 	$name = trim($name);
 	$name = preg_replace('/[^a-zA-Z\s]/', "", $name);
-	$name = preg_replace('/[\s+]/', " ", $name);
+	//$name = preg_replace('/[\s+]/', " ", $name);
 	return ucwords(strtolower($name));
 }
 
